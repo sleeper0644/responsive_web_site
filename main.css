@@ -59,6 +59,85 @@ body {
     background-size: cover;
 }
 
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+.intro__suptitle {
+    font-size: 72px;
+    font-family: var(--font_family-slave);
+}
+.intro__title {
+    font-size: 150px;
+    font-family: var(--font-family-master);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    line-height: 1;
+}
+
+/*Header*/
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.header__nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--font-family-master);
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px 15px;
+    position: relative;
+    text-decoration: none;
+    color: var(--color-white);
+
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: var(--color-selec);
+}
+
+.nav_link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-selec);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.nav_link:hover::after{
+    display: block;
+}
+
 /*container*/
 .container {
     width: 100%;
