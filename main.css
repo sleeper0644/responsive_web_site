@@ -264,6 +264,11 @@ body {
     margin-bottom: 40px;
 }
 
+.section--map {
+    background: url('./images/map/background_map.jpg') center/cover no-repeat;
+    padding: 60px 0;
+}
+
 .section__header {
     width: 100%;
     max-width: 950px;
@@ -791,10 +796,13 @@ color: var(--color-black);
 
 .blog {
     display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
 }
 
 .blog__item {
-    width: 30%;
+    width: 100%;
+    max-width: 380px;
 }
 
 .blog__header {
@@ -846,5 +854,102 @@ color: var(--color-black);
 
 .blog__footer {
     border-top: 1px solid var(--color-gray-text);
+    color: var(--color-gray-text);
     padding-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
 }
+
+.blog-stat__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+    
+.blog-stat__item img {
+    vertical-align: middle;
+    padding-right: 7px;
+}
+
+/*map*/
+
+.map {
+    text-align: center;
+}
+
+.map__title a {
+    color: var(--color-red);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.map__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 15px auto 0;
+    background-color: var(--color-red);
+}
+
+/*footer*/
+
+.footer {
+    padding-top: 75px;
+    background-color: var(--color-gay);
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.footer__text {
+    margin-bottom: 30px;
+    font-family: var(--font-family-paragraph);
+    color: var(--color-gray-text);
+    font-size: 15px;
+
+}
+
+.footer__social--content {
+    vertical-align: middle;
+}
+
+.footer__social--header {
+    font-size: 14px;
+    color: #ccc;
+    border-bottom: 1px solid var(--color-gray-text);
+    padding-bottom: 20px;
+}
+
+.footer__social--header b {
+    font-size: 18px;
+}
+
+.footer__social--content {
+    padding: 20px 0 40px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;  
+    
+}
+
+.footer__social--content span {
+    padding-right: 25px;
+    
+}
+
+.footer__social--content {
+    display: flex;
+    column-gap: 15px;
+}
+
+    .footer__social--img img {
+        vertical-align: middle;
+    }
